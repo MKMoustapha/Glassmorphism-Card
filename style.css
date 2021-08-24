@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    background-image: linear-gradient(90deg,#420516 50%,#fff 50%);
+    overflow: hidden;
+}
+
+.box {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.about {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    left: 0;
+    backdrop-filter: blur(50px);
+    bottom: -200%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    
+    
+}
+
+@keyframes anm {
+    from {
+        bottom: -200px;
+    }
+    to {
+        bottom: 0;
+    }
+}
+   /* for the mouseleave  */
+@keyframes move {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: -400px;
+
+    }
+}
+
+
+h1 {
+    position: absolute;
+    color: #fff;
+    left: 12%;
+    letter-spacing: 2px;
+    top: 2px;
+    font-weight: 800;
+
+}
+
+p {
+    position: absolute;
+    color: white;
+    top: 28%;
+    left: 25%;
+
+}
+
+span {
+    color: #420516;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -48%;
+    display: flex;
+    left: 20px;
+    color: white;
+    cursor: pointer;
+
+}
+
+li {
+    list-style: none;
+    margin: 15px;
+}
+
+i {
+    font-size: 40px;
+
+}
+
+i:hover {
+    color: red;
+}
+
+ /* when the mouse enter */
+@keyframes icon {
+    from {
+        bottom: -200%;
+    }
+    to {
+        bottom: -48%;
+    }
+}
+
+ /* when it leave  */
+
+ 
+@keyframes ic {
+    from {
+        bottom: -50%;
+    }
+    to {
+        bottom: -200%;
+    }
+}
+
+
+
+
+
+

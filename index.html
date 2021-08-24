@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Card</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- for the font awsome icon -->
+    <link rel="stylesheet" href="all.min.css">
+</head>
+<body>
+    <div class="box" id="box">
+        <div class="img">
+            <img src="1.jpg" alt="">
+        </div>
+        <div class="about" id="about">
+            <h1><span>Emilia</span> Clarck</h1>
+            <p>Creative <span>Designer</span></p>
+            <ul id="ul">
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-linkedin-in"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const about = document.getElementById("about");
+        const box = document.getElementById("box");
+        const ul = document.getElementById("ul");
+
+
+
+
+        box.onmouseenter = function() {
+           about.style.animation = "anm 5s";
+           about.style.bottom = "0";
+           ul.style.animation = "icon 7s";
+        }
+
+        //  when the mouseleave 
+
+        box.onmouseleave = function() {
+           about.style.animation = "move 5s";
+           about.style.bottom = "-200%";
+           ul.style.animation = "ic 5s";
+
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
